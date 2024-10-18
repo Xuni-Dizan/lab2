@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Bài tập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #223243">
+    <div class="container">
+        <div class="header">
+            <h1>Danh sách bài tập</h1>
+            <input type="text" id="search" placeholder="Tìm kiếm bài tập...">
+            <select id="filter-language">
+                <option value="">Tất cả ngôn ngữ</option>
+                <option value="C">C</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+            </select>
+        </div>
+        <div class="exercise-list" id="exercise-list"></div>
+    </div>
+
+    <div class="editor" id="editor" style="display: none;">
+        <h2 id="exercise-title"></h2>
+        <p id="exercise-description"></p>
+        <textarea id="code" placeholder="Viết mã của bạn ở đây..."></textarea>
+        <button id="run-code">Chạy mã</button>
+        <button id="clear-code">Xóa mã</button>
+        <button id="submit-code">Nộp</button>
+        <div id="test-results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
