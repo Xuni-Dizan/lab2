@@ -49,13 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Chạy mã (cần gọi API ở đây)
-    runCodeButton.addEventListener("click", () => {
-        const code = codeInput.value;
-        console.log("Chạy mã:", code);
-        // Thêm mã gọi API để chạy mã ở đây
-        // Hiển thị kết quả kiểm tra
-        testResults.innerHTML = "<p>Kết quả kiểm tra: Thành công!</p>"; // Thay thế bằng kết quả thực tế
-    });
+    if (runCodeButton) {
+        runCodeButton.addEventListener("click", () => {
+            const code = codeInput.value;
+            console.log("Chạy mã:", code);
+            testResults.innerHTML = "<p>Kết quả kiểm tra: Thành công!</p>";
+        });
+    }
+    
 
     // Xóa mã
     clearCodeButton.addEventListener("click", () => {
